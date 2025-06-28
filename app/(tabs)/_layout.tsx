@@ -27,17 +27,73 @@ export default function TabLayout() {
         }),
       }}>
       <Tabs.Screen
-        name="index"
+        name="dashboard"
         options={{
-          title: 'Home',
+          title: 'Dashboard',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="attendance"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Attendance',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="clock.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="tasks"
+        options={{
+          title: 'Tasks',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="checklist" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="calendar"
+        options={{
+          title: 'Calendar',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="calendar" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="chat"
+        options={{
+          title: 'Chat',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="message.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="email"
+        options={{
+          title: 'Email',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="envelope.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="leave"
+        options={{
+          title: 'Leave',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="calendar.badge.plus" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="announcements"
+        options={{
+          title: 'Announcements',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="megaphone.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="documents"
+        options={{
+          title: 'Documents',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="folder.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="person.fill" color={color} />,
         }}
       />
     </Tabs>
